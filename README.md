@@ -17,10 +17,11 @@
 <a href="https://github.com/Phantom-19/HTML-JS-CSS-PY-PHP-BASH/watchers"><img title="En train de regarder" src="https://img.shields.io/github/watchers/Phantom-19/HTML-JS-CSS-PY-PHP-BASH?label=Watchers&color=blue"></a>
 
 ### `Si vous copiez ce code, alors donnez-moi les crédits` 
-## `Retrouvez moi sur` :
+## `Contact me` :
 
 [![Github](https://img.shields.io/badge/Github-%40Phantom--19-cyan?logo=github)](https://github.com/Phantom-19)
 [![YouTube](https://img.shields.io/badge/Youtube-%40FasterAxel-red?logo=youtube)](https://www.youtube.com/c/FASTERAXEL)
 [![Twitter](https://img.shields.io/twitter/follow/Faxel2020.svg?label=Me%20suivre&logo=twitter)](https://twitter.com/Faxel2020)
 [![Instagram](https://img.shields.io/badge/Instagram-%40faxelh-magenta?logo=instagram)](https://www.instagram.com/faxelh)
+[![Telegram](https://img.shields.io/badge/Telegram-%40Linux_Tor-magenta?logo=instagram)](https://t.me/Linux_Tor)
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg?logo=License-MIT)](https://raw.githubusercontent.com/phantom-19/yutube/master/MIT)
