@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculatrice simple</title>
+    <meta charset="utf-8">
+    <meta name="calc" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <script>
+        function clique1(){
+            document.calc.disp.value+=1;
+    }
+        function clique2(){
+            document.calc.disp.value+=2;
+    }
+        function clique3(){
+            document.calc.disp.value+=3;
+    }
+        function clique4(){
+            document.calc.disp.value+=4;
+    }
+        function clique5(){
+            document.calc.disp.value+=5;
+    } 
+     function clique6(){
+            document.calc.disp.value+=6;
+    }
+        function clique7(){
+            document.calc.disp.value+=7;
+    }
+        function clique8(){
+            document.calc.disp.value+=8;
+    }
+        function clique9(){
+            document.calc.disp.value+=9;
+    }
+        function clique0(){
+            document.calc.disp.value+=0;
+    }
+        function plus(){
+            document.calc.disp.value+="+";
+        }
+        function sous(){
+            document.calc.disp.value+="-";
+        }
+        function mul(){
+            document.calc.disp.value+="*";
+        }
+        function div(){
+            document.calc.disp.value+="/";
+        }
+        function egal(){
+            if(document.calc.disp.value==""){
+                var eg="";
+            }
+            else{
+                var eg=eval(document.calc.disp.value)
+            }
+            document.calc.disp.value=eg;
+        }
+        function deci(){
+            document.calc.disp.value+=".";
+        }
+        function prcent(){
+            document.calc.disp.value+="%";
+        }
+        function par1(){
+            document.calc.disp.value+="(";
+        }
+        function par2(){
+            document.calc.disp.value+=")";
+        }
+        function AC(){
+            document.calc.disp.value="";
+        }
+
+    </script>
+    
+    <style>
+    .nums2{
+        width:20%;      
+        margin:0.2%;
+        align-self:center;
+        margin-bottom:10px;
+        background-color:#ffffff;
+        border-radius:8px;
+        border-color:#3399ff; 
+        border-width:4.3px; 
+        color:#3399ff;
+      }
+     .nums5{
+        width:20%;      
+        margin:0.2%;
+        align-self:center;
+        margin-bottom:10px;
+        background-color:#ffc34d;
+        border-radius:8px;
+        border-color:#ffc34d;
+        border-width:4.3px; 
+        color:#ffffff;
+    }
+    .nums1{
+        width:20%;        
+        margin:0.2%;
+        align-self:center;
+        margin-bottom:10px;
+        margin-left:8%; 
+        background-color:#ffffff; 
+        border-radius:8px;
+        border-color:#3399ff; 
+        border-width:4.3px; 
+        color:#3399ff;
+    }
+    .nums3{
+        width:20%;        
+        margin:0.2%;
+        align-self:center;
+        margin-bottom:10px;
+        background-color:#3399ff;
+        border-radius:8px;
+        border-color:#ffffff;
+        border-width:4.3px;  
+        color:#ffffff;
+    }
+    .nums4{
+        width:20%;
+        margin:0.2%;
+        align-self:center;
+        margin-bottom:10px;
+        background-color:red;
+        border-radius:8px;
+        border-color:red; 
+        border-width:4.3px;
+        color:#ffffff;
+    }
+   .nums12{
+        width:20%;      
+        margin:0.2%;
+        align-self:center;
+        margin-bottom:10px;
+        margin-left:8%; 
+        background-color:#3399ff; 
+        border-radius:8px;
+        border-color:#ffffff; 
+        border-width:4.3px; 
+        color:#ffffff;
+    }
+    .retour{
+        background-color:#262626;
+        width:65% ;
+        border-radius: 10px;
+        display: inline-block;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left:18%;
+        margin-top:23%;         
+    }
+    footer{
+        background-color:#0076ff;
+        position:sticky;
+        color:black;
+        padding:13px;
+        font-size:15px;
+        font-weight:bold;
+        text-align:right;
+    }
+    input[type=text]{
+        width:83.66%;
+        font-size:28px; 
+        margin-top:15px;
+        margin-bottom:20px;
+        margin-left:8%; 
+        border-radius:10px;
+        border-color:#3399ff;           
+    }
+   
+</style>
+</head>
+<body>
+
+<form name="calc">
+    <div class="retour">   
+    <input type="text" name="disp" id="disp" value=""><br>  
+    <input type="button" class="nums12" value="(" onclick="par1()">
+    <input type="button" class="nums3" value=")" onclick="par2()">
+    <input type="button" class="nums3" value="%" onclick="prcent()">
+    <input type="button" class="nums4" value="AC" onclick="AC()"><br>
+    <input type="button" class="nums1" value="7" onclick="clique7()">
+    <input type="button" class="nums2" value="8" onclick="clique8()">
+    <input type="button" class="nums2" value="9" onclick="clique9()">
+    <input type="button" class="nums3" value="/" onclick="div()"><br>
+    <input type="button" class="nums1" value="4" onclick="clique4()">
+    <input type="button" class="nums2" value="5" onclick="clique5()">
+    <input type="button" class="nums2" value="6" onclick="clique6()">
+    <input type="button" class="nums3" value="*" onclick="mul()"><br>
+    <input type="button" class="nums1" value="1" onclick="clique1()">
+    <input type="button" class="nums2" value="2" onclick="clique2()">
+    <input type="button" class="nums2" value="3" onclick="clique3()">
+    <input type="button" class="nums3" value="-" onclick="sous()"><br>
+    <input type="button" class="nums1" value="0" onclick="clique0()">
+    <input type="button" class="nums3" value="." onclick="deci()">
+    <input type="button" class="nums5" value="=" onclick="egal()">
+    <input type="button" class="nums3" value="+" onclick="plus()">
+    </div>
+</form>
+</body>
+ <footer> ©Copyright Faxel </footer>
+</html>
