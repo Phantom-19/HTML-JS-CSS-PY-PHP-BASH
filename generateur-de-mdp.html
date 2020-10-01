@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generateur de mot de passe</title>
+  </head>
+  <body>
+    <style type="text/css">       
+     input[type="text"],input[type="date"],input[type="number"],input[type="submit"] {
+      	width: 100%;
+      	height: 5vh;
+      }
+      table,input[type="submit"]{
+      	font-size: 20px;
+      }
+      body{
+      	background-image: radial-gradient(circle, #1bb9d0, #ff7256, coral);
+      }
+      
+      .btn {
+        background: #ff3030; /* Couleur de fond */
+        border-color: #000000; /* #46a28b Couleur de la bordure */
+        color: #FFFFFF; /* Couleur du texte */
+        font-size: 20px;
+        height: auto;
+        padding: 0px 14px; /* La marge entre le texte et la bordure */
+      }
+  /* Bouton du formulaire au passage de la souris */
+      .btn:hover {
+        background: #00ff45;
+        border-color: #000000;
+        color: #000000;
+        cursor: pointer; /* Change la forme de curseur de la souris */
+      }
+    </style>
+    <center>
+      <form>
+        <table border="20" style="margin-top: 80px;width: 60%;">
+          <tr>
+            <td colspan="2" bgcolor="#4f4f4f">
+              <center>
+                <h1 style="color: orange;">GENERATEUR DE MOT DE PASSE</h1>
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td>Nom </td>
+            <td><input required="" type="text" name="" id="nom" /></td>
+          </tr>
+          <tr>
+            <td>Prenom </td>
+            <td><input required="" type="text" name="" id="prenom" /></td>
+          </tr>
+          <tr>
+            <td>Age </td>
+            <td><input required="" type="number" name="" id="age" /></td>
+          </tr>
+          <tr>
+            <td>Date de naissance </td>
+            <td><input required="" type="date" id="date" name="" /></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <center>
+                <input class="btn" type="submit" value="Generer" onclick="faxel()" name="" />
+              </center>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" bgcolor="#000000" style="color: coral;">
+              <center>
+                MOT DE PASSE 1
+                <input
+                  type="text"
+                  name=""
+                  id="r"
+                  style="border:none;border-color: none;text-transform : uppercase;"
+                  readonly=""
+                /><br />
+                MOT DE PASSE 2
+                <input
+                  type="text"
+                  id="r1"
+                  style="border:none;text-transform : uppercase;"
+                  readonly=""
+                /><br />
+                MOT DE PASSE 3
+                <input
+                  type="text"
+                  id="r2"
+                  style="border:none;text-transform : uppercase;"
+                  readonly=""
+                /><br />
+                MOT DE PASSE 4
+                <input
+                  type="text"
+                  id="r3"
+                  style="border:none;text-transform : uppercase;"
+                  readonly=""
+                /><br />
+              </center>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </center>
+    <script type="text/javascript">
+      	function faxel(argument) {
+      		var nom="";
+      		var prenom="";
+      		var age=0;
+      	    var date="";
+      		var nom=document.getElementById("nom").value;
+      		var prenom=document.getElementById("prenom").value;
+      		var age=document.getElementById("age").value;
+      		var date=document.getElementById("date").value;
+      		var reseau=document.getElementById("date").value;
+      		var sm="";
+      		sm=nom + prenom + age + date ;
+              const a = nom.split('');
+              const b = prenom.split('');
+              const c = age.split('');
+              const d = date.split('');
+              var x1=(d[3]);
+              var x2=(d[6]);
+              var x3=(d[9]);
+              var x4=(a[0]);
+              var x5=(a[1]);
+              var x6=(b[2]);
+              var x7=(b[0]);
+              var x8=(c[1]);
+      	    document.getElementById("r").value=x1+x2+x3+x4+x5+x6+x7+x8;
+      	    document.getElementById("r1").value=x3+x7+x1+x4+x8+x6+x2+x5;
+      	    document.getElementById("r2").value=x6+x8+x7+x4+x5+x1+x3+x2;
+            document.getElementById("r3").value=x2+x5+x7+x4+x8+x1+x3+x6;
+      }
+    </script>
+  </body>
+</html>
