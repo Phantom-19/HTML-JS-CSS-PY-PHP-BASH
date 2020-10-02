@@ -295,8 +295,8 @@
 
 /*  style skeleton */
 
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css
-*/@import
+/*! mywebsite1.css | MIT License | github.com/phantom-19/mywebsite1.css */
+@import
 url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active{outline:0}a:hover{outline:0}abbr[title]{border-bottom:1px
 dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em
 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em
@@ -361,8 +361,7 @@ solid
   font-weight: normal;
   font-style: normal;
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
@@ -385,25 +384,25 @@ solid
   text-align: center;
   /* opacity: .8; */
  
-  /* For safety - reset parent styles, that can break glyph codes*/
+  /* Pour plus de sécurité - réinitialisez les styles parents, qui peuvent casser les codes de glyphe*/
   font-variant: normal;
   text-transform: none;
  
-  /* fix buttons height, for twitter bootstrap */
+  /* corriger la hauteur des boutons, pour le bootstrap de Twitter */
   line-height: 1em;
  
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
+  /* Compensation du centre d'animation - les marges doivent être symétriques */
+  /* supprimer si pas nécessaire*/
   margin-left: .2em;
  
-  /* you can be more comfortable with increased icons size */
+  /* vous pouvez être plus à l'aise avec l'augmentation de la taille des icônes*/
   /* font-size: 120%; */
  
-  /* Font smoothing. That was taken from TWBS */
+  /* Le lissage des polices. Cela a été pris de TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
  
-  /* Uncomment for 3D effect */
+  /* Supprimer les commentaires pour l'effet 3D */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
@@ -477,7 +476,7 @@ solid
 	font-size: 1.4em;
 	vertical-align: middle;   
 	
-	/* Better Font Rendering =========== */
+	/* meilleur rendu des polices =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	
